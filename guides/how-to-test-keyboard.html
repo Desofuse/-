@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Test a Keyboard</title>
+  <meta name="description" content="Step-by-step keyboard test for letters, numbers, modifiers, special keys, and optional ghosting / rollover check." />
+  <link rel="stylesheet" href="./docs.css" />
+  <script src="../lang.js" defer></script>
+</head>
+<body>
+  <header class="header container">
+    <div class="logo">
+      <span data-lang="en">Keyboard Tester Guides</span>
+      <span data-lang="ru">Гайды Keyboard Tester</span>
+    </div>
+    <nav class="nav">
+      <a class="pill" href="../">
+        <span data-lang="en">Open tester</span>
+        <span data-lang="ru">Открыть тестер</span>
+      </a>
+      <a class="pill" href="./">
+        <span data-lang="en">All guides</span>
+        <span data-lang="ru">Все гайды</span>
+      </a>
+      <a class="pill" href="../privacy.html">
+        <span data-lang="en">Privacy</span>
+        <span data-lang="ru">Конфиденциальность</span>
+      </a>
+      <a class="pill" href="../terms.html">
+        <span data-lang="en">Terms</span>
+        <span data-lang="ru">Условия</span>
+      </a>
+      <button class="pill" id="langToggle" type="button">EN</button>
+    </nav>
+  </header>
+
+  <main class="container article">
+    <h1>
+      <span data-lang="en">How to Test a Keyboard</span>
+      <span data-lang="ru">Как проверить клавиатуру</span>
+    </h1>
+
+    <p class="lead">
+      <span data-lang="en">Fast checks for every key and common problems. Use the online tester to see key highlights and codes.</span>
+      <span data-lang="ru">Быстрая проверка всех клавиш и частых проблем. В онлайн‑тестере вы увидите подсветку нажатых клавиш и коды.</span>
+    </p>
+
+    <p>
+      <a class="pill" href="../">
+        <span data-lang="en">Start keyboard test</span>
+        <span data-lang="ru">Начать тест</span>
+      </a>
+      <a class="pill" href="./keyboard-key-not-working.html" style="margin-left:8px">
+        <span data-lang="en">If a key fails</span>
+        <span data-lang="ru">Если клавиша не работает</span>
+      </a>
+    </p>
+
+    <h2>
+      <span data-lang="en">1) Test letters and numbers</span>
+      <span data-lang="ru">1) Проверьте буквы и цифры</span>
+    </h2>
+    <ol>
+      <li>
+        <span data-lang="en">Open the tester.</span>
+        <span data-lang="ru">Откройте тестер.</span>
+      </li>
+      <li>
+        <span data-lang="en">Press <b>A–Z</b> slowly, then <b>0–9</b>.</span>
+        <span data-lang="ru">Нажмите <b>A–Z</b> по очереди, затем <b>0–9</b>.</span>
+      </li>
+      <li>
+        <span data-lang="en">Look for keys that don’t light up or light up late.</span>
+        <span data-lang="ru">Ищите клавиши, которые не загораются или срабатывают с задержкой.</span>
+      </li>
+    </ol>
+    <p>
+      <b>Tip:</b>
+      <span data-lang="en">A key that triggers twice can be a switch issue or debris under the keycap.</span>
+      <span data-lang="ru">Клавиша, которая «двойнит», может быть грязной или с проблемой переключателя.</span>
+    </p>
+
+    <h2>
+      <span data-lang="en">2) Test modifiers (Shift, Ctrl, Alt, Win/Command)</span>
+      <span data-lang="ru">2) Проверьте модификаторы (Shift, Ctrl, Alt, Win/Command)</span>
+    </h2>
+    <p>
+      <span data-lang="en">Hold each modifier for a second to confirm it registers reliably. Then test common combos like <b>Ctrl+C</b>, <b>Ctrl+V</b>, and <b>Alt+Tab</b>.</span>
+      <span data-lang="ru">Зажмите каждый модификатор на 1 секунду, чтобы убедиться, что он стабильно регистрируется. Затем проверьте комбинации <b>Ctrl+C</b>, <b>Ctrl+V</b>, <b>Alt+Tab</b>.</span>
+    </p>
+    <ul>
+      <li>
+        <span data-lang="en"><b>Windows:</b> Ctrl, Alt, Win</span>
+        <span data-lang="ru"><b>Windows:</b> Ctrl, Alt, Win</span>
+      </li>
+      <li>
+        <span data-lang="en"><b>Mac:</b> Control, Option, Command</span>
+        <span data-lang="ru"><b>Mac:</b> Control, Option, Command</span>
+      </li>
+    </ul>
+
+    <h2>
+      <span data-lang="en">3) Test special keys</span>
+      <span data-lang="ru">3) Проверьте специальные клавиши</span>
+    </h2>
+    <ul>
+      <li><span data-lang="en">Backspace, Enter, Space</span><span data-lang="ru">Backspace, Enter, Space</span></li>
+      <li><span data-lang="en">Arrow keys + Home/End/PageUp/PageDown</span><span data-lang="ru">Стрелки + Home/End/PageUp/PageDown</span></li>
+      <li><span data-lang="en">F-keys (F1–F12) and Fn combinations (if your keyboard has Fn)</span><span data-lang="ru">F‑клавиши (F1–F12) и сочетания с Fn (если есть Fn)</span></li>
+      <li><span data-lang="en">Media keys (volume, play/pause) if available</span><span data-lang="ru">Медиа‑клавиши (громкость, play/pause), если есть</span></li>
+    </ul>
+
+    <h2>
+      <span data-lang="en">4) Check for ghosting / rollover (optional)</span>
+      <span data-lang="ru">4) Проверьте гостинг / rollover (опционально)</span>
+    </h2>
+    <p>
+      <span data-lang="en">Ghosting happens when certain key combinations cannot be detected at the same time. If you play games or type fast, test common combos you use.</span>
+      <span data-lang="ru">Гостинг — когда некоторые сочетания не регистрируются одновременно. Если вы играете или быстро печатаете, проверьте ваши привычные комбинации.</span>
+    </p>
+    <p>
+      <span data-lang="en">Read: <a href="./ghosting-nkro.html">Ghosting and NKRO</a></span>
+      <span data-lang="ru">Читайте: <a href="./ghosting-nkro.html">Гостинг и NKRO</a></span>
+    </p>
+
+    <h2>FAQ</h2>
+    <details>
+      <summary>
+        <span data-lang="en">Does this tester record my typing?</span>
+        <span data-lang="ru">Тестер записывает мои нажатия?</span>
+      </summary>
+      <p>
+        <span data-lang="en">No. The tool reads key events in your browser to show which keys are pressed. See the Privacy page for details.</span>
+        <span data-lang="ru">Нет. Инструмент читает события клавиатуры в браузере только чтобы подсветить нажатые клавиши. Подробности — на странице конфиденциальности.</span>
+      </p>
+    </details>
+    <details>
+      <summary>
+        <span data-lang="en">Why do I see “event.code” and “keyCode”?</span>
+        <span data-lang="ru">Почему показываются “event.code” и “keyCode”?</span>
+      </summary>
+      <p>
+        <span data-lang="en">They help diagnose layout issues, remaps, and app-specific shortcuts. “event.code” describes the physical key; “keyCode” is legacy but still used in some apps.</span>
+        <span data-lang="ru">Это помогает диагностировать раскладку, переназначения и сочетания. “event.code” — физическая клавиша, “keyCode” — старый формат, но иногда ещё используется.</span>
+      </p>
+    </details>
+    <details>
+      <summary>
+        <span data-lang="en">One key works in the tester but not in my app — why?</span>
+        <span data-lang="ru">Клавиша работает в тестере, но не работает в приложении — почему?</span>
+      </summary>
+      <p>
+        <span data-lang="en">The app might capture the key as a shortcut, or a remapping tool/IME is changing input. Try another app and check keyboard settings.</span>
+        <span data-lang="ru">Приложение может перехватывать клавишу как хоткей, или ввод меняют ремап‑утилиты/IME. Проверьте в другом приложении и настройки клавиатуры.</span>
+      </p>
+    </details>
+
+    <h2>
+      <span data-lang="en">Next step</span>
+      <span data-lang="ru">Следующий шаг</span>
+    </h2>
+    <p>
+      <span data-lang="en">If any key fails, follow: <a href="./keyboard-key-not-working.html">Keyboard key not working — what to do</a>.</span>
+      <span data-lang="ru">Если какая-то клавиша не работает, перейдите: <a href="./keyboard-key-not-working.html">Клавиша не работает — что делать</a>.</span>
+    </p>
+  </main>
+
+  <footer class="footer">
+    © Keyboard Tester Online · <a href="../">Tool</a> · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a>
+  </footer>
+</body>
+</html>

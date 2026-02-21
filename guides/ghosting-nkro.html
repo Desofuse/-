@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keyboard Ghosting & NKRO</title>
+  <meta name="description" content="What keyboard ghosting is, what KRO/NKRO means, and how to test it." />
+  <link rel="stylesheet" href="./docs.css" />
+  <script src="../lang.js" defer></script>
+</head>
+<body>
+  <header class="header container">
+    <div class="logo">
+      <span data-lang="en">Keyboard Tester Guides</span>
+      <span data-lang="ru">Гайды Keyboard Tester</span>
+    </div>
+    <nav class="nav">
+      <a class="pill" href="../">
+        <span data-lang="en">Open tester</span>
+        <span data-lang="ru">Открыть тестер</span>
+      </a>
+      <a class="pill" href="./">
+        <span data-lang="en">All guides</span>
+        <span data-lang="ru">Все гайды</span>
+      </a>
+      <a class="pill" href="../privacy.html">
+        <span data-lang="en">Privacy</span>
+        <span data-lang="ru">Конфиденциальность</span>
+      </a>
+      <a class="pill" href="../terms.html">
+        <span data-lang="en">Terms</span>
+        <span data-lang="ru">Условия</span>
+      </a>
+      <button class="pill" id="langToggle" type="button">EN</button>
+    </nav>
+  </header>
+
+  <main class="container article">
+    <h1>
+      <span data-lang="en">Keyboard Ghosting & NKRO</span>
+      <span data-lang="ru">Гостинг клавиатуры и NKRO</span>
+    </h1>
+
+    <p class="lead">
+      <span data-lang="en">Ghosting usually shows up when you press several keys at once (common in games). This guide explains what it is and how to check it quickly.</span>
+      <span data-lang="ru">Гостинг чаще всего заметен, когда вы нажимаете несколько клавиш одновременно (часто в играх). Здесь — что это такое и как быстро проверить.</span>
+    </p>
+
+    <h2>
+      <span data-lang="en">What is “ghosting”?</span>
+      <span data-lang="ru">Что такое «гостинг»?</span>
+    </h2>
+    <ul>
+      <li>
+        <span data-lang="en"><b>Ghosting:</b> the keyboard reports an extra key you did not press, or it fails to report a key when multiple keys are held.</span>
+        <span data-lang="ru"><b>Гостинг:</b> клавиатура «видит» лишнюю клавишу, которую вы не нажимали, или наоборот — не регистрирует одну из клавиш при одновременном нажатии.</span>
+      </li>
+      <li>
+        <span data-lang="en"><b>Rollover (KRO):</b> how many keys can be reliably registered at the same time.</span>
+        <span data-lang="ru"><b>Rollover (KRO):</b> сколько клавиш клавиатура может стабильно регистрировать одновременно.</span>
+      </li>
+      <li>
+        <span data-lang="en"><b>NKRO:</b> “n-key rollover” — the keyboard can register many keys simultaneously (often over USB with a proper implementation).</span>
+        <span data-lang="ru"><b>NKRO:</b> “n-key rollover” — клавиатура может регистрировать много клавиш одновременно (обычно по USB, если реализовано корректно).</span>
+      </li>
+    </ul>
+
+    <h2>
+      <span data-lang="en">How to test ghosting (simple)</span>
+      <span data-lang="ru">Как проверить гостинг (простой тест)</span>
+    </h2>
+    <ol>
+      <li>
+        <span data-lang="en">Open the <a href="../">Keyboard Tester Online</a>.</span>
+        <span data-lang="ru">Откройте <a href="../">Keyboard Tester Online</a>.</span>
+      </li>
+      <li>
+        <span data-lang="en">Hold a common cluster like <b>W + A + Shift</b> and then tap <b>Space</b> (or try your favorite in-game combo).</span>
+        <span data-lang="ru">Зажмите типичную связку, например <b>W + A + Shift</b>, и нажмите <b>Space</b> (или вашу игровую комбинацию).</span>
+      </li>
+      <li>
+        <span data-lang="en">Watch which keys light up. Try adding 1–2 more keys and see when a key stops registering.</span>
+        <span data-lang="ru">Посмотрите, какие клавиши загораются. Добавьте ещё 1–2 клавиши и проверьте, когда одна из них перестанет регистрироваться.</span>
+      </li>
+    </ol>
+
+    <p>
+      <b>Tip:</b>
+      <span data-lang="en">For a repeatable test, try grid combos like <b>QWE + ASD</b> or number-row keys.</span>
+      <span data-lang="ru">Для повторяемого теста удобно проверять «сетку», например <b>QWE + ASD</b>, или ряд цифр.</span>
+    </p>
+
+    <h2>
+      <span data-lang="en">Why it happens</span>
+      <span data-lang="ru">Почему это происходит</span>
+    </h2>
+    <p>
+      <span data-lang="en">Many non-mechanical or older keyboards use a matrix wiring layout. Some combinations share the same electrical rows/columns, which can create conflicts when pressed together.</span>
+      <span data-lang="ru">Многие мембранные или старые клавиатуры используют матричную схему. Некоторые сочетания делят общие «строки/столбцы», из-за чего при одновременном нажатии возникают конфликты.</span>
+    </p>
+
+    <h2>
+      <span data-lang="en">What to do if you see ghosting</span>
+      <span data-lang="ru">Что делать, если вы заметили гостинг</span>
+    </h2>
+    <ul>
+      <li>
+        <span data-lang="en">If it’s a laptop keyboard, ghosting is often a hardware limitation.</span>
+        <span data-lang="ru">Если это клавиатура ноутбука, гостинг часто является ограничением «железа».</span>
+      </li>
+      <li>
+        <span data-lang="en">Try another USB port or remove hubs (rarely helps, but easy to test).</span>
+        <span data-lang="ru">Попробуйте другой USB-порт или уберите хаб (редко помогает, но проверить легко).</span>
+      </li>
+      <li>
+        <span data-lang="en">For gaming, consider a keyboard advertised as “anti-ghosting” or “NKRO.”</span>
+        <span data-lang="ru">Для игр лучше выбирать клавиатуру с пометкой “anti-ghosting” или “NKRO.”</span>
+      </li>
+    </ul>
+
+    <hr class="hr" />
+
+    <p class="small">
+      <span data-lang="en">Related: <a href="./how-to-test-keyboard.html">How to test a keyboard</a> · <a href="./keyboard-key-not-working.html">A key is not working</a></span>
+      <span data-lang="ru">Похожие гайды: <a href="./how-to-test-keyboard.html">Как проверить клавиатуру</a> · <a href="./keyboard-key-not-working.html">Клавиша не работает</a></span>
+    </p>
+  </main>
+
+  <footer class="footer">
+    © Keyboard Tester Online · <a href="../">Tool</a> · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a>
+  </footer>
+</body>
+</html>

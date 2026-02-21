@@ -1,0 +1,15 @@
+{
+  "name": "Keyboard Tester Online",
+  "short_name": "Key Tester",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#070710",
+  "theme_color": "#070710",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

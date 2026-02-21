@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0f16" />
+  <title>About — Keyboard Tester Online</title>
+  <meta name="description" content="Keyboard Tester Online is a free browser tool that highlights pressed keys, shows event.code/keyCode, and helps diagnose stuck keys and ghosting." />
+  <link rel="canonical" href="https://desofuse.github.io/keyboard-tester-online/about.html" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About — Keyboard Tester Online" />
+  <meta property="og:description" content="What this keyboard tester does, what it stores (nothing), and how to contact." />
+  <meta property="og:url" content="https://desofuse.github.io/keyboard-tester-online/about.html" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="About — Keyboard Tester Online" />
+  <meta name="twitter:description" content="What this keyboard tester does and how it works." />
+
+  <style>
+    body{overflow:auto}
+    .docWrap{max-width:860px;margin:0 auto;padding:40px 16px}
+    .docCard{background:var(--panel, rgba(255,255,255,0.06));border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:22px;box-shadow:0 20px 70px rgba(0,0,0,.35)}
+    .docCard h1{margin:0 0 10px}
+    .docCard p{color:rgba(238,242,255,.82)}
+    .docCard a{color:#7dd3fc}
+    .docTop{display:flex;gap:10px;align-items:center;justify-content:space-between;margin-bottom:14px}
+    .docBtns{display:flex;gap:10px;flex-wrap:wrap}
+    .docBtns .pill{padding:10px 12px}
+    .docUl li{margin:8px 0;color:rgba(238,242,255,.82)}
+  </style>
+</head>
+<body>
+  <div class="docWrap">
+    <div class="docCard">
+      <div class="docTop">
+        <div>
+          <h1>About</h1>
+          <div class="smallMuted">Keyboard Tester Online</div>
+        </div>
+        <div class="docBtns">
+          <a class="pill" href="./">Open Tester</a>
+          <a class="pill" href="./guides/">Guides</a>
+          <a class="pill" href="./privacy.html">Privacy</a>
+          <a class="pill" href="./terms.html">Terms</a>
+        </div>
+      </div>
+
+      <p>
+        This website is a simple browser tool to check how your keyboard behaves. It highlights the keys you press and
+        shows the raw keyboard event data (
+        <code>event.code</code>, <code>event.key</code>, <code>keyCode</code>, modifiers, and timestamps).
+      </p>
+
+      <h2>What it helps with</h2>
+      <ul class="docUl">
+        <li>Confirm every key is detected (laptop keyboards, USB keyboards, gaming keyboards).</li>
+        <li>Find stuck or repeating keys.</li>
+        <li>Test shortcuts and modifier combos (Ctrl/Alt/Shift/Meta).</li>
+        <li>Check ghosting / key rollover behavior by holding multiple keys.</li>
+        <li>Understand layout differences (QWERTY vs AZERTY, ISO vs ANSI).</li>
+      </ul>
+
+      <h2>Privacy</h2>
+      <p>
+        The tester runs locally in your browser. It does not send your keystrokes to a server. See the
+        <a href="./privacy.html">Privacy Policy</a> for details.
+      </p>
+
+      <h2>Contact / feedback</h2>
+      <p>
+        If something is broken or you want a feature, the easiest way is to open an issue in the source repository:
+        <a href="https://github.com/desofuse/keyboard-tester-online" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+
+      <p class="smallMuted">Last updated: Feb 2026</p>
+    </div>
+  </div>
+</body>
+</html>

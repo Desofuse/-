@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://desofuse.github.io/keyboard-tester-online/sitemap.xml
