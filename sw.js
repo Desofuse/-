@@ -1,4 +1,4 @@
-const CACHE = "kb-fullscreen-v13"; // <-- ОБЯЗАТЕЛЬНО меняй версию при каждом релизе
+const CACHE = "kb-fullscreen-v14"; // <-- ОБЯЗАТЕЛЬНО меняй версию при каждом релизе
 const ASSETS = [
   "./",
   "./index.html",
@@ -17,7 +17,7 @@ const ASSETS = [
   "./guides/how-to-test-keyboard.html",
   "./guides/keyboard-key-not-working.html",
   "./guides/ghosting-nkro.html",
-  "./guides/keyboard-layouts.html"
+  "./guides/keyboard-layouts-language.html"
 ];
 
 self.addEventListener("install", (e) => {

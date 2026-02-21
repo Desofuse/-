@@ -1,5 +1,6 @@
 /* ====== state ====== */
-const LANG_KEY = "kto_lang";
+// Shared across the whole site (tool + guides)
+const LANG_KEY = "lang";
 
 function getPreferredLang() {
   // 1) URL param (useful when sharing links)
@@ -16,6 +17,13 @@ function getPreferredLang() {
   try {
     const stored = localStorage.getItem(LANG_KEY);
     if (stored === 'ru' || stored === 'en') return stored;
+
+    // Legacy key (older builds)
+    const legacy = localStorage.getItem('kto_lang');
+    if (legacy === 'ru' || legacy === 'en') {
+      localStorage.setItem(LANG_KEY, legacy);
+      return legacy;
+    }
   } catch (_) {}
 
   // 3) Browser language
@@ -76,14 +84,14 @@ const I18N = {
     howTo: "Как пользоваться",
     ok: "OK",
     live: "Live",
-    hint: "Кликни сюда и нажми любую клавишу",
+	    hint: "Кликните в область и нажмите любую клавишу",
     helpBody: `
       <ul>
         <li><b>Live</b> — подсвечивает только пока клавиша зажата.</li>
         <li><b>Latch</b> — запоминает подсветку и держит её до <b>Clear</b> (или повторного нажатия).</li>
         <li><b>Capture</b> — глушит хоткеи/скролл (Ctrl/⌘ + комбинации, Space, стрелки и т.п.).</li>
         <li>Подсветка завязана на <b>event.code</b> — это “физическая” клавиша.</li>
-        <li>Если “не ловит” — кликни по пустому месту страницы, чтобы вернуть фокус.</li>
+	        <li>Если клавиши не распознаются — кликните по пустому месту страницы, чтобы вернуть фокус.</li>
         <li><b>Esc</b> закрывает это окно.</li>
       </ul>
     `
@@ -292,7 +300,8 @@ const els = {
   btnCapture: $("#btnCapture"),
   btnMode: $("#btnMode"),
   btnClear: $("#btnClear"),
-  btnLang: $("#btnLang"),
+  // Used by the tool page. Guides use #langToggle.
+  btnLang: $("#langToggle") || $("#btnLang"),
   btnPlatform: $("#btnPlatform"),
   btnTheme: $("#btnTheme"),
   btnFullscreen: $("#btnFullscreen"),
