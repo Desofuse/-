@@ -2,29 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://desofuse.github.io/keyboard-tester-online/</loc>
-  </url>
-  <url>
-    <loc>https://desofuse.github.io/keyboard-tester-online/guides/</loc>
-  </url>
-  <url>
-    <loc>https://desofuse.github.io/keyboard-tester-online/guides/how-to-test-keyboard.html</loc>
-  </url>
-  <url>
-    <loc>https://desofuse.github.io/keyboard-tester-online/guides/keyboard-key-not-working.html</loc>
-  </url>
-  <url>
-    <loc>https://desofuse.github.io/keyboard-tester-online/guides/ghosting-nkro.html</loc>
-  </url>
-  <url>
-    <loc>https://desofuse.github.io/keyboard-tester-online/guides/keyboard-layouts-language.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://desofuse.github.io/keyboard-tester-online/about.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://desofuse.github.io/keyboard-tester-online/privacy.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://desofuse.github.io/keyboard-tester-online/terms.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://desofuse.github.io/keyboard-tester-online/guides/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://desofuse.github.io/keyboard-tester-online/guides/how-to-test-keyboard.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://desofuse.github.io/keyboard-tester-online/guides/keyboard-key-not-working.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://desofuse.github.io/keyboard-tester-online/guides/ghosting-nkro.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://desofuse.github.io/keyboard-tester-online/guides/keyboard-layouts-language.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

@@ -1,6 +1,5 @@
 (() => {
-  // Shared across the whole site (tool + guides)
-  const KEY = 'lang';
+  const KEY = 'kto_lang';
 
   // Allow sharing links like ...?lang=ru
   try {
@@ -18,15 +17,6 @@
     let stored = null;
     try { stored = localStorage.getItem(KEY); } catch (_) {}
     if (stored === 'ru' || stored === 'en') return stored;
-
-    // Legacy key (older builds)
-    try {
-      const legacy = localStorage.getItem('kto_lang');
-      if (legacy === 'ru' || legacy === 'en') {
-        localStorage.setItem(KEY, legacy);
-        return legacy;
-      }
-    } catch (_) {}
     const d = detectDefault();
     try { localStorage.setItem(KEY, d); } catch (_) {}
     return d;

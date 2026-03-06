@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <!-- Favicons -->
+  <link rel="icon" href="/keyboard-tester-online/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/keyboard-tester-online/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/keyboard-tester-online/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/keyboard-tester-online/apple-touch-icon.png">
+
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0b0f16" />
   <meta name="description" content="Free online keyboard tester. Test every key, see event.code and keyCode, detect stuck keys. Works on Windows and Mac." />
@@ -64,9 +70,13 @@
   </script>
 
   <link rel="manifest" href="./manifest.webmanifest" />
-  <link rel="icon" href="./favicon.svg" />
-  <link rel="stylesheet" href="./styles.css" />
+<link rel="stylesheet" href="./styles.css" />
   <title>Keyboard Tester Online — Test Keys Instantly</title>
+
+  <!-- Social / site name -->
+  <meta property="og:site_name" content="Keyboard Tester Online">
+  <meta property="og:type" content="website">
+
 </head>
 
 <body>
@@ -89,7 +99,7 @@
         <button id="btnMode" class="pill" type="button">Mode: Live</button>
         <button id="btnClear" class="pill" type="button">Clear</button>
 
-	      <button id="langToggle" class="pill" type="button">EN</button>
+        <button id="btnLang" class="pill" type="button">EN</button>
         <button id="btnPlatform" class="pill" type="button">Windows</button>
 
         <button id="btnTheme" class="pill" type="button">Theme: Night</button>
